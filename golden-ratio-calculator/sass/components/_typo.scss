@@ -18,15 +18,17 @@ p.typo {
     line-height: $line-height-default;
     font-weight: 300;
 }
-
+.typo--note {
+    color: $color-gray;
+    font-size: $font-size-large;
+    font-weight: 100;
+}
 .typo--align-left {
     text-align: left;
 }
-
 .typo--align-center {
     text-align: center;
 }
-
 .typo--align-right {
     @include media-tablet-plus {
         text-align: right;

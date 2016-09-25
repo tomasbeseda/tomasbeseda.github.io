@@ -1,0 +1,16 @@
+.error-message {
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: $default-spacing;
+    max-width: 345px;
+    font-size: 15px;
+    font-weight: 100;
+    -webkit-border-radius: $border-radius;
+    border-radius: $border-radius;
+    text-align: center;
+    &--red {
+        background-color: $color-red;
+        color: $color-white;
+    }
+}

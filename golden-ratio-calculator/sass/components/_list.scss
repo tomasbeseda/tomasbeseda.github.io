@@ -10,6 +10,7 @@
         font-weight: 400;
         text-align: left;
         text-decoration: none;
+        transition: opacity 3s;
         &:last-child {
             border-bottom: 0;
         }

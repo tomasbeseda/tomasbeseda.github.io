@@ -52,12 +52,16 @@
                     <input type="number" id="iteration" placeholder="Iteration" value="7">
                 </div>
                 <div class="form__item">
-                    <button id="count" class="btn btn--white">Calculate</button>
+                    <button id="count" class="btn btn--yellow">Calculate</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="section">
+        <div id="error"></div>
+        <div id="empty-state" class="typo--note typo--align-center">
+            List is empty, use the form above to get some numbers :)
+        </div>
         <div class="wrap">
             <div class="wrap__item wrap__item--2">
                 <div class="list" id="increasing"></div>
