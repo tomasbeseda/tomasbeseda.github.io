@@ -3,9 +3,11 @@
     text-align: center;
     &__item {
         display: block;
+        padding-top: $default-spacing;
         text-align: left;
         @include media-tablet-plus {
             display: inline-block;
+            padding-top: 0;
             padding-right: 2px;
             max-width: 181px;
         }
