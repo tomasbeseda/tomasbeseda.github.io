@@ -1,0 +1,58 @@
+.form {
+    display: block;
+    text-align: center;
+    &__item {
+        display: block;
+        text-align: left;
+        @include media-tablet-plus {
+            display: inline-block;
+            padding-right: 2px;
+            max-width: 181px;
+        }
+        &--xs {
+            @include media-tablet-plus {
+                max-width: 70px;
+            }
+        }
+        input,
+        textarea,
+        select {
+            box-sizing: border-box;
+            padding: $default-spacing;
+            width: 100%;
+            background: $color-white;
+            border: 1px solid $color-white;
+            border-radius: $border-radius;
+            font-size: $font-size-default;
+            @include media-tablet-plus {
+                font-size: $font-size-small;
+            }
+            &:focus {
+                border: 1px solid $color-primary;
+            }
+        }
+        input[type="radio"] {
+            width: auto;
+        }
+        label {
+            cursor: pointer;
+            font-weight: 100;
+        }
+        label,
+        & {
+            font-size: $font-size-small;
+            color: $color-white;
+        }
+        label + * {
+            margin-top: $default-spacing;
+        }
+        & + & {
+            //margin-top: $default-spacing * 2;
+        }
+        &--label-block {
+            label {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.wrap {
+    text-align: center;
+    font-size: 0rem;
+
+    &__item {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    &__item--2,
+    &__item--3,
+    &__item--4,
+    &__item--5 {
+        width: 100%;
+    }
+
+    @include media-tablet-plus {
+        &__item {
+            display: inline-block;
+            vertical-align: top;
+        }
+        &__item--2 {
+            width: 50%;
+        }
+        &__item--3 {
+            width: 33.3333%;
+        }
+        &__item--4 {
+            width: 25%;
+        }
+        &__item--5 {
+            width: 20%;
+        }
+    }
+}

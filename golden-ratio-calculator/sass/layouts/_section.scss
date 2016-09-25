@@ -1,0 +1,24 @@
+.section {
+    display: block;
+    margin: 0 auto;
+    padding: 0 $section-padding;
+    max-width: $tablet-min;
+
+    @include media-desktop-plus {
+        padding: 0;
+    }
+
+    & + & {
+        margin-top: $section-margin;
+    }
+
+    &__outdent {
+        margin-left: -$section-padding;
+        margin-right: -$section-padding;
+
+        @include media-tablet-plus {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}

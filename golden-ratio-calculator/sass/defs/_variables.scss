@@ -1,0 +1,49 @@
+// breakpoints
+$large-mobile-min:      480px;
+$tablet-min:            768px;
+$desktop-min:           992px;
+$bigscreen-min:         1201px;
+$desktop-max:           1200px;
+// spacing
+$small-spacing:         5px;
+$default-spacing:       10px;
+$medium-spacing:        15px;
+$large-spacing:         20px;
+// layout spacing
+$section-margin:        15px; // top margin between sections
+$section-padding:       10px; // on mobile
+$wrap-padding:          $section-padding;
+$indent-spacing:        $section-margin;
+$indent-spacing-close:  $indent-spacing / 2;
+// grid variables
+$grid-columns:          12;
+$grid-max-width:        $desktop-max;
+$grid-spacing:          10px;
+// colors
+$color-primary:         #00B16A;
+$color-white:           #fff;
+$color-black:           #000;
+$color-gray:            #676767;
+$color-medium-gray:     #d9d9d9;
+$color-light-gray:      #eee;
+$body-background:       #F5F5F5;
+$border-radius:         4px;
+// typography
+$typo-serif:            serif;
+$typo-sans:             'Roboto', sans-serif;
+$font-size-small:       13px;
+$font-size-default:     16px;
+$line-height-default:   23px;
+$font-size-medium:      20px;
+$font-size-large:       21px;
+$font-size-xl:          28px;
+$line-height-button:    50px;
+// border-radius
+$default-border: 1px solid rgba(255, 255, 255, 0.3);;
+// transition
+$transition-fast:  0.2s;
+// z-index
+$z-index: (
+  header-dropdown: 9998,
+  modal: 9999,
+);

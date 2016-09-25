@@ -1,0 +1,21 @@
+.list {
+    display: block;
+    background-color: $color-white;
+    &__item {
+        display: block;
+        padding: $large-spacing $section-padding;
+        color: $color-primary;
+        border-bottom: 1px solid $body-background;
+        font-family: $typo-sans;
+        font-weight: 400;
+        text-align: left;
+        text-decoration: none;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+    &__icon {
+        float: right;
+        color: $color-primary;
+    }
+}

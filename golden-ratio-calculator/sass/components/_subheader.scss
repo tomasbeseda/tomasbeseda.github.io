@@ -1,0 +1,46 @@
+.subheader {
+    display: block;
+    margin-bottom: $large-spacing;
+    padding: $default-spacing 0;
+    background: $color-primary;
+    @include media-tablet-plus {
+        padding: $large-spacing 0;
+    }
+    &__content {
+        margin: 0 auto;
+        padding: 0 $section-padding;
+        max-width: $desktop-max;
+    }
+    &__back {
+        display: inline-block;
+        margin: $default-spacing $large-spacing;
+        color: $color-black;
+        font-family: $typo-sans;
+        font-size: $font-size-small;
+        font-weight: 100;
+        text-decoration: none;
+        @include media-tablet-plus {
+            float: left;
+            margin: 0;
+        }
+    }
+    &__edit {
+        display: inline-block;
+        margin: $default-spacing $large-spacing;
+        color: $color-black;
+        font-family: $typo-sans;
+        font-size: $font-size-small;
+        font-weight: 100;
+        text-decoration: none;
+        @include media-tablet-plus {
+            float: right;
+            margin: 0;
+        }
+    }
+    &__title {
+        display: inline-block;
+        color: $color-black;
+        font-family: $typo-serif;
+        font-size: $font-size-large;
+    }
+}

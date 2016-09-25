@@ -1,0 +1,78 @@
+.header {
+    display: block;
+    padding: $large-spacing 0;
+    background: $color-primary;
+    border-bottom: $default-border;
+    &__content {
+        margin: 0 auto;
+        padding: 0 $section-padding;
+        max-width: $desktop-max;
+        font-size: 0rem;
+    }
+    &__logo {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        color: $color-white;
+        font-family: $typo-sans;
+        font-weight: 100;
+        font-size: 25px;
+        text-align: center;
+    }
+    &__navigation {
+        display: none;
+        @include media-tablet-plus {
+            display: inline-block;
+            float: right;
+            box-sizing: border-box;
+            width: 50%;
+            font-size: 1rem;
+            text-align: right;
+        }
+    }
+    &__link {
+        display: inline-block;
+        padding: 0 $default-spacing;
+        color: $color-white;
+        font-family: $typo-sans;
+        font-size: $font-size-small;
+        font-weight: 100;
+        text-decoration: none;
+        &:hover {
+            color: $color-light-gray;
+            transition: $transition-fast;
+        }
+        &:last-child {
+            padding: 0;
+        }
+        &--user {
+            color: $color-primary;
+            font-weight: normal;
+            text-transform: none;
+        }
+    }
+    &__user {
+        display: none;
+        @include media-tablet-plus {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 25%;
+            font-size: 1rem;
+            text-align: right;
+        }
+    }
+    &__mobile-navigation {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 50%;
+        color: $color-primary;
+        font-family: $typo-sans;
+        font-weight: normal;
+        font-size: $font-size-large;
+        text-align: right;
+        cursor: pointer;
+        @include media-tablet-plus {
+            display: none;
+        }
+    }
+}

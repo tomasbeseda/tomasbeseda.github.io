@@ -1,0 +1,16 @@
+{
+  "name": "PHI",
+  "version": "0.1.0",
+  "description": "Golden ratio generator for designers",
+  "author": "BOTH",
+  "homepage": "http://both.cz",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-clean-css": "^2.0.6",
+    "gulp-sass": "^2.0.1",
+    "gulp-concat": "^2.6.0"
+  },
+  "devDependencies": {
+    "gulp-uglify": "^1.5.3"
+  }
+}

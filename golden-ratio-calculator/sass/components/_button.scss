@@ -1,0 +1,40 @@
+.btn {
+    margin: $small-spacing 0;
+    padding: $default-spacing;
+    background: transparent;
+    border-radius: $border-radius;
+    border: 1px solid $color-medium-gray;
+    -webkit-border-radius: $border-radius;
+    font-size: $font-size-small;
+    text-decoration: none;
+    cursor: pointer;
+    &--primary {
+        background-color: $color-primary;
+        color: $color-white;
+        border: 1px solid $color-medium-gray;
+    }
+    &--white {
+        background-color: $color-white;
+        color: $color-primary;
+        border: 1px solid $color-medium-gray;
+    }
+    &--rounded {
+        padding: $default-spacing $large-spacing;
+        border-radius: 50px;
+    }
+    &--transparent {
+        color: $color-primary;
+        border: 0;
+    }
+    &--transparent-invert {
+        color: $color-white;
+        border: 0;
+        text-decoration: underline;
+    }
+}
+a.btn {
+    line-height: $line-height-button;
+    &--transparent {
+        line-height: inherit;
+    }
+}

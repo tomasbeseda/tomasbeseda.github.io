@@ -1,0 +1,8 @@
+.indent {
+    & + & {
+        margin-top: $indent-spacing;
+    }
+    & + .indent--close-top {
+        margin-top: $indent-spacing;
+    }
+}
