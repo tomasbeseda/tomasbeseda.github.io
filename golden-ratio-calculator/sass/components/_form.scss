@@ -24,6 +24,8 @@
             border: 1px solid $color-white;
             border-radius: $border-radius;
             font-size: $font-size-default;
+            -webkit-appearance: none;
+            appearance: none;
             @include media-tablet-plus {
                 font-size: $font-size-small;
             }
