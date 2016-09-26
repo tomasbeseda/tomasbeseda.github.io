@@ -42,19 +42,19 @@
     </div>
     <div class="subheader">
         <div class="subheader__content">
-            <div class="form">
+            <form id="calculate" onsubmit="event.preventDefault();" class="form">
                 <div class="form__item">
                     <label for="number">Base number</label>
                     <input type="number" id="number" placeholder="1000" autofocus>
                 </div>
                 <div class="form__item form__item--xs">
                     <label for="iteration">Iteration</label>
-                    <input type="number" id="iteration" placeholder="Iteration" value="7">
+                    <input type="number" id="iteration" placeholder="Iteration" value="10">
                 </div>
                 <div class="form__item">
-                    <button id="count" class="btn btn--yellow">Calculate</button>
+                    <button type="submit" class="btn btn--yellow">Calculate</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
     <div class="section">

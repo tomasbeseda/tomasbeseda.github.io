@@ -45,7 +45,7 @@ var App = {
         App.append('empty-state', null, true);
     },
     init: function() {
-        document.getElementById('count').addEventListener('click', function() {
+        document.getElementById('calculate').addEventListener('submit', function() {
             App.clearAppends();
             var number = App.getValue('number'),
                 iteration = App.getValue('iteration');
