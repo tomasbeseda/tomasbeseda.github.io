@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: $default-spacing;
-    max-width: 345px;
+    max-width: $tablet-min;
     font-size: 14px;
     font-weight: 100;
     -webkit-border-radius: $border-radius;

@@ -3,8 +3,6 @@ var App = {
         var PHI = 1.618,
             increase = number,
             decrease = number;
-        App.append('increasing', '<h2 class="typo">Increasing</h2>');
-        App.append('decreasing', '<h2 class="typo">Decreasing</h2>');
         for (var i = 0; i < iteration; i++) {
             increase = increase * PHI;
             decrease = decrease / PHI;
@@ -42,14 +40,13 @@ var App = {
         App.append('increasing', null, true);
         App.append('decreasing', null, true);
         App.append('error', null, true);
-        App.append('empty-state', null, true);
     },
     init: function() {
         document.getElementById('calculate').addEventListener('submit', function() {
-            App.clearAppends();
             var number = App.getValue('number'),
                 iteration = App.getValue('iteration');
             if (number && iteration) {
+                App.clearAppends();
                 App.magic(number, iteration);
             } else {
                 App.error(number, iteration);
