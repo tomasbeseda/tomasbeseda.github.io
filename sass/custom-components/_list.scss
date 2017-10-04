@@ -1,0 +1,46 @@
+/* ==========================================================================
+   List
+   ========================================================================== */
+
+.list {
+    display: block;
+    text-align: center;
+    .list__headline {
+        line-height: 50px;
+        font-weight: $type-weight-thin;
+    }
+    .list__item {
+        margin: 0 auto;
+        padding: $x-large-spacing $medium-spacing $small-spacing $medium-spacing;
+        max-width: 100%;
+        border-top: $border-light;
+        &:hover {
+            background: $light-grey;
+            border-radius: $border-radius;
+            transition: $transition-long;
+        }
+        @include media-tablet-plus {
+            max-width: 50%;
+        }
+    }
+    .list__title {
+        color: $black;
+        font-size: $x-large-spacing;
+        line-height: 40px;
+        font-weight: $type-weight-thin;
+    }
+    .list__date {
+        display: block;
+        color: $medium-grey;
+        font-size: $x-small-type;
+    }
+    .list__text-content {
+        font-family: $serif;
+        font-size: $medium-type;
+        line-height: $medium-line;
+        letter-spacing: 0.01rem;
+        font-weight: $type-weight-thin;
+        font-style: normal;
+        color: $medium-grey;
+    }
+}

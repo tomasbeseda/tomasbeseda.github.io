@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    padding: $x-large-spacing 0;
+    max-width: $device-desktop-max;
+    width: 100%;
+    &--large-spacing-top {
+        padding-top: $xx-large-spacing * 2;
+    }
+    &--large-spacing-bottom {
+        padding-bottom: $xx-large-spacing * 2;
+    }
+    &--join-top {
+        padding: 0 0 $x-large-spacing 0;
+    }
+}
+
+.container--separate {
+    border-top: $border-light;
+}
+
+.wrap {
+    text-align: center;
+    font-size: 0rem;
+    .wrap__item {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0 $large-spacing;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .wrap__item--2,
+    .wrap__item--3,
+    .wrap__item--4,
+    .wrap__item--5 {
+        width: 100%;
+    }
+    .wrap__item--5 {
+        display: inline-block;
+        width: 50%;
+    }
+    .wrap__item--no-padding {
+        padding: 0;
+    }
+    @include media-tablet-plus {
+        .wrap__item {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+        }
+        .wrap__item--2 {
+            width: 50%;
+        }
+        .wrap__item--3 {
+            width: 33.3333%;
+        }
+        .wrap__item--4 {
+            width: 25%;
+        }
+        .wrap__item--5 {
+            width: 30%;
+        }
+        .wrap__item--6 {
+            width: 15%;
+        }
+    }
+    @include media-desktop-plus {
+        .wrap__item--5 {
+            width: 20%;
+        }
+    }
+}
+.indent {
+    & + & {
+        margin-top: $large-spacing;
+    }
+    & + .indent--large {
+        margin-top: 40px;
+    }
+}

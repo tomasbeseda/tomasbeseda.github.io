@@ -1,0 +1,17 @@
+@mixin media-desktop-plus {
+	@media screen and (min-width: $device-desktop-min) {
+		@content;
+	}
+}
+
+@mixin media-tablet-plus {
+	@media screen and (min-width: $device-tablet-min) {
+		@content;
+	}
+}
+
+@mixin media-mobile {
+	@media screen and (max-width: $device-mobile-max) {
+		@content;
+	}
+}

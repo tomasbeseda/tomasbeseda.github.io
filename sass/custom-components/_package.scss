@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Package
+   ========================================================================== */
+.package {
+    display: block;
+    margin: $small-spacing;
+    padding: $xx-large-spacing $medium-spacing;
+    min-height: 300px;
+    &.package--favorite {
+        border: 3px solid $red;
+    }
+    .package__title {
+        font-weight: $type-weight-semibold;
+    }
+    .package__price {
+        position: relative;
+        padding: $small-spacing 0$medium-spacing 0;
+        color: $red;
+        font-size: $big-type;
+        font-weight: $type-weight-semibold;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 70%;
+            height: 1px;
+            transform: translateX(-50%);
+            border-bottom: $border-light;
+        }
+    }
+    .package__note {
+        font-size: $small-type;
+    }
+    .package__list {
+        display: block;
+        padding: $medium-spacing 0 0 0;
+        list-style-type: none;
+        & li {
+            padding: $small-spacing 0;
+            color: $medium-grey;
+            font-size: $small-type;
+        }
+    }
+}

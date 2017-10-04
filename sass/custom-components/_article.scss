@@ -1,0 +1,43 @@
+/* ==========================================================================
+   Article
+   ========================================================================== */
+
+.article {
+    text-align: left;
+    .article__headline {
+        font-weight: $type-weight-thin;
+    }
+    .article__date {
+        display: inline-block;
+        margin-right: $medium-spacing;
+        color: $medium-grey;
+        font-size: $x-small-type;
+        font-weight: $type-weight-semibold;
+    }
+    .article__tags {
+        display: inline-block;
+        font-size: $x-small-type;
+        text-transform: uppercase;
+    }
+    .article__text-content {
+        padding: $x-large-spacing 0;
+        font-family: $serif;
+        font-size: $medium-type;
+        line-height: $medium-line;
+        letter-spacing: 0.01rem;
+        font-weight: $type-weight-thin;
+        font-style: normal;
+        color: $medium-grey;
+    }
+    .article__code-block,
+    .code-block {
+        display: inline-block;
+        width: 100%;
+        font-family: $monospace;
+        font-size: $small-type;
+        background: $code;
+        padding: $x-large-spacing $medium-spacing;
+        border-radius: $small-spacing;
+        margin: $medium-spacing 0;
+    }
+}

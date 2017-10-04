@@ -1,0 +1,54 @@
+// SASS variables
+
+// Spacing
+
+$small-spacing: 5px;
+$medium-spacing: 10px;
+$large-spacing: 15px;
+$x-large-spacing: 20px;
+$xx-large-spacing: 25px;
+
+// Typography
+
+$sans-serif: 'Roboto', sans-serif;
+$serif: 'freight-text-pro', serif;
+$monospace: 'Monaco', monospace;
+
+$x-small-type: 11px;
+$small-type: 13px;
+$default-type: 15px;
+$medium-type: 17px;
+$big-type: 25px;
+$medium-line: 27px;
+
+$type-weight-thin: 300;
+$type-weight-regular: 400;
+$type-weight-semibold: 600;
+
+// Colors
+
+$black: #000000;
+$white: #FFFFFF;
+$medium-grey: #787f8c;
+$light-grey: #EEEEEE;
+$code: rgba(153, 153, 187, 0.3);
+$red: #DE4F4F;
+
+// Media queries
+
+$device-mobile-max: 767px;
+$device-tablet-min: 768px;
+$device-desktop-min: 992px;
+$device-desktop-max: 1200px;
+
+// Borders
+
+$border-dark: 1px solid #999999;
+$border-light: 1px solid #EEEEEE;
+
+$border-radius: 5px;
+
+// Transitions
+
+$transition-short: all 0.1s;
+$transition-long: all 0.5s;

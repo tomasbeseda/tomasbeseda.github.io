@@ -1,0 +1,69 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+    display: block;
+    .footer__button {
+        margin-bottom: $xx-large-spacing;
+    }
+    .footer__form {
+        display: none;
+        margin: 0 auto;
+        padding-bottom: $x-large-spacing;
+        max-width: 100%;
+        @include media-tablet-plus {
+            max-width: 50%;
+        }
+        &.js-show {
+            display: block;
+        }
+    }
+    .footer__notes {
+        margin: 0 -$large-spacing;
+        height: 30px;
+        color: $medium-grey;
+        border-top: $border-light;
+        font-size: $x-small-type;
+        line-height: 40px;
+    }
+}
+.footer__form--error {
+    background: #F94E46;
+    border-color: #F94E46!important;
+    color: #fff;
+}
+
+.contact a {
+    color: #fff;
+}
+
+a.contact-icon {
+    display: inline-block;
+    margin-right: 10px;
+    //padding-top: 10px;
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    transition: 0.3s;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        color: #000;
+        background-color: #d9ac09;
+    }
+    &:active {
+        color: #000;
+        background-color: #ffff;
+    }
+    &:focus {
+        color: #000;
+        background-color: #fff;
+    }
+}

@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Timeline
+   ========================================================================== */
+.timeline {
+    display: block;
+    margin: 0 auto;
+    padding: $large-spacing;
+    max-width: 500px;
+    text-align: left;
+    border: $border-light;
+    border-radius: $border-radius;
+    @include media-mobile {
+        padding: 0;
+        border: none;
+    }
+    .timeline__title {
+        padding: $small-spacing;
+        font-size: $medium-type;
+        font-weight: $type-weight-semibold;
+        white-space: nowrap;
+        i {
+            padding-right: $medium-spacing;
+            color: $red;
+        }
+        @include media-mobile {
+            font-size: 16px;
+        }
+    }
+    .timeline__content {
+        margin-left: $medium-spacing + 2px;
+        padding-left: $x-large-spacing + 2px;
+        padding-top: $small-spacing;
+        padding-right: $medium-spacing;
+        padding-bottom: $xx-large-spacing + $xx-large-spacing;
+        color: $medium-grey;
+        font-size: 14px;
+        border-left: $border-dark;
+        &:last-child {
+            border-left: 0;
+            padding-bottom: $medium-spacing;
+        }
+        @include media-mobile {
+            font-size: $small-type;
+        }
+    }
+}

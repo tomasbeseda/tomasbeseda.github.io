@@ -1,3 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext);
+
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $sans-serif;
+    background-color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+}
+
+i {
+    padding: $medium-spacing $small-spacing 0 $small-spacing;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: $small-spacing 0;
+    padding: $medium-spacing;
+    border: $border-dark;
+    border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+    font-family: inherit;
+    font-size: 13px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+hr {
+    border: 0;
+    border-top: $border-light;
+    border-bottom: 0;
+}
+
+code {
+    padding: 2px $small-spacing;
+    font-family: $monospace;
+    font-size: 13px;
+    background: rgba(153, 153, 187, 0.3);
+    -webkit-border-radius: $border-radius;
+    border-radius: $border-radius;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.page {
+    position: relative;
+    background-color: $white;
+    z-index: 2;
+    @include media-desktop-plus {
+        margin-bottom: 400px;
+        -webkit-box-shadow: 0 12px 64px -15px rgba(0,0,0,.75);
+        box-shadow: 0 12px 64px -15px rgba(0,0,0,.75);
+    }
+}
+
 @charset "UTF-8";
 
 /*!
@@ -14,8 +111,8 @@
 
 @font-face {
     font-family: "Ionicons";
-    src: url("../assets/icons/ionicons.eot?v=2.0.0");
-    src: url("../assets/icons/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), url("../assets/icons/ionicons.ttf?v=2.0.0") format("truetype"), url("../assets/icons/ionicons.woff?v=2.0.0") format("woff"), url("../assets/icons/ionicons.svg?v=2.0.0#Ionicons") format("svg");
+    src: url("../../assets/icons/ionicons.eot?v=2.0.0");
+    src: url("../../assets/icons/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), url("../../assets/icons/ionicons.ttf?v=2.0.0") format("truetype"), url("../../assets/icons/ionicons.woff?v=2.0.0") format("woff"), url("../../assets/icons/ionicons.svg?v=2.0.0#Ionicons") format("svg");
     font-weight: normal;
     font-style: normal;
 }

@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Profile
+   ========================================================================== */
+
+.profile {
+	display: block;
+	padding: $x-large-spacing;
+	background-color: $white;
+
+	.profile__image {
+		position: relative;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-webkit-filter: grayscale(1);
+		filter: grayscale(1);
+	}
+	.profile__image--small {
+		width: 30px;
+		height: 30px;
+	}
+	.profile__image--medium {
+		width: 100px;
+		height: 100px;
+	}
+	.profile__image--big {
+		width: 190px;
+		height: 190px;
+	}
+	.profile__icon {
+    	margin: 0 auto;
+		width: 100px;
+    	height: 60px;
+		@include media-tablet-plus {
+			height: 80px;
+		}
+	}
+	.ion {
+		color: #ffc800;
+    	font-size: 61px;
+	}
+	@include media-desktop-plus{
+		.profile__image--big {
+			width: 250px;
+			height: 250px;
+		}
+	}
+	.profile__heading {
+		padding: $large-spacing $small-spacing $large-spacing $small-spacing;
+		color: $black;
+		font-weight: $type-weight-regular;
+		font-size: 23px;
+	}
+	.profile__text-content {
+		display: block;
+		color: $medium-grey;
+		font-weight: $type-weight-thin;
+		line-height: 1.5em;
+	}
+	& a {
+		font-size: 21px;
+	}
+	& .fa {
+		color: $medium-grey;
+		transition: 0.3s;
+	}
+	& .fa:hover {
+		color: $red;
+	}
+}
+
+.profile--inline * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+img.reference {
+	width: 100px;
+	@include media-tablet-plus {
+		width: 150px;
+	}
+}
