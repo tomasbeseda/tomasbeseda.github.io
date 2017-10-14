@@ -194,6 +194,13 @@
         </div>
     </div>
     <script src="build/js/bundle.js"></script>
+    <script>
+        (function(){
+            if (!window.navigator.language === 'cs') {
+                window.location.href = '/en/';
+            }
+        }());
+    </script>
 </body>
 
 </html>
