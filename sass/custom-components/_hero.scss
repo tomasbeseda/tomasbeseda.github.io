@@ -8,9 +8,9 @@
     min-height: 500px;
     background-color: $light-grey;
     background-image: url('../../assets/img/desktop.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-size: 1400px;
+    background-position: 70% 0%;
     &:before {
         content: "";
         display: block;
@@ -25,6 +25,8 @@
     }
     @include media-tablet-plus {
         min-height: 720px;
+        background-size: cover;
+        background-position: top center;
     }
     .hero__content {
         position: absolute;
