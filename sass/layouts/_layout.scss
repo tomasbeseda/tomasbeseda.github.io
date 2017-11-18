@@ -6,6 +6,7 @@
     position: relative;
     margin: 0 auto;
     padding: $x-large-spacing 0;
+    padding: $x-large-spacing constant(safe-area-inset-right) $x-large-spacing constant(safe-area-inset-left);
     max-width: $device-desktop-max;
     width: 100%;
     &--large-spacing-top {
