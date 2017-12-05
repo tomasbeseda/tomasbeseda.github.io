@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="HandheldFriendly" content="True"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>OBR Film - a beautiful way of film art</title>
+        <meta name="description" content="OBR Film - a beautiful way of film art">
+
+        <link rel="stylesheet" type="text/css" href="build/css/main.css"/>
+        <style>
+            #tab-1 {
+                display: block;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="modal">
+            <div class="modal__content">
+                <a href="javascript.void(0)" class="modal__close">
+                    <span class="ion ion-close"></span>
+                </a>
+                <a href="javascript.void(0)" class="modal__next">
+                    <span class="ion ion-chevron-right"></span>
+                </a>
+                <a href="javascript.void(0)" class="modal__prev">
+                    <span class="ion ion-chevron-left"></span>
+                </a>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header__content">
+                <a href="/" class="header__logo">OBR Film</a>
+                <ul class="header__navigation">
+                    <li>
+                        <a href="reklama.html">Reklama</a>
+                    </li>
+                    <li>
+                        <a href="filmove-projekty.html">Filmové projekty</a>
+                    </li>
+                    <li>
+                        <a href="animace.html">Animace</a>
+                    </li>
+                    <li>
+                        <a href="o-nas.html">O nás</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section section--center" id="what-we-do">
+            <h1 class="indent">Filmové projekty</h1>
+            <div class="wrap indent">
+                <div class="wrap__item wrap__item--3">
+                    <div class="media">
+                        <h3>Media title</h3>
+                        <p>Media perex</p>
+                    </div>
+                </div>
+                <div class="wrap__item wrap__item--3">
+                    <div class="media">
+                        <h3>Media title</h3>
+                        <p>Media perex</p>
+                    </div>
+                </div>
+                <div class="wrap__item wrap__item--3">
+                    <div class="media">
+                        <h3>Media title</h3>
+                        <p>Media perex</p>
+                    </div>
+                </div>
+                <div class="wrap__item wrap__item--3">
+                    <div class="media">
+                        <h3>Media title</h3>
+                        <p>Media perex</p>
+                    </div>
+                </div>
+                <div class="wrap__item wrap__item--3">
+                    <div class="media">
+                        <h3>Media title</h3>
+                        <p>Media perex</p>
+                    </div>
+                </div>
+                <div class="wrap__item wrap__item--3">
+                    <div class="media">
+                        <h3>Media title</h3>
+                        <p>Media perex</p>
+                    </div>
+                </div>
+                <div class="wrap__item wrap__item--3">
+                    <div class="media">
+                        <h3>Media title</h3>
+                        <p>Media perex</p>
+                    </div>
+                </div>
+                <div class="wrap__item wrap__item--3">
+                    <div class="media">
+                        <h3>Media title</h3>
+                        <p>Media perex</p>
+                    </div>
+                </div>
+                <div class="wrap__item wrap__item--3">
+                    <div class="media">
+                        <h3>Media title</h3>
+                        <p>Media perex</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="indent">Kontakt</h2>
+                <div class="wrap indent">
+                    <div class="wrap__item wrap__item--2">
+                        <div class="indent">
+                            <p class="typo">
+                                <span class="ion ion-android-pin"></span>
+                                Adresa /
+                                <span class="typo--size-18 typo--bold color-primary">Ortenovo nám. 890/2, 170 00, Praha 7</span>
+                            </p>
+                        </div>
+                        <div class="indent">
+                            <div class="typo--size-18">
+                                <span class="typo--bold">Telefon /
+                                </span>
+                                <a href="tel:+420223016015" class="typo--bold">+420 223 016 015</a>
+                            </div>
+                        </div>
+                        <div class="indent">
+                            <div class="typo--size-18">
+                                <span class="typo--bold">E-mail /
+                                </span>
+                                <a href="mailto: obrfilm@obrfilm.com" class="typo--bold">obrfilm@obrfilm.com</a>
+                            </div>
+                        </div>
+                        <div class="indent">
+                            <div class="typo--size-18">
+                                <span class="typo--bold">IČO /
+                                </span>
+                                <span class="color-primary">71626042</span>
+                            </div>
+                        </div>
+                        <div class="indent indent--large padding-bottom">
+                            <a href="" target="_blank" class="contact-icon">
+                                <span class="ion ion-social-facebook"></span>
+                            </a>
+                            <a href="" target="_blank" class="contact-icon">
+                                <span class="ion ion-social-instagram"></span>
+                            </a>
+                            <a href="" target="_blank" class="contact-icon">
+                                <span class="ion ion-social-youtube"></span>
+                            </a>
+                            <a href="" target="_blank" class="contact-icon">
+                                <span class="ion ion-social-vimeo"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="build/js/bundle.js"></script>
+            <script>
+                $(function () {
+                    $(document).on('click', '.js-tabs', function (event) {
+                        event.preventDefault();
+                        $('.js-tabs').removeClass('tabs__item--active');
+                        $('.tabs__content').fadeOut();
+                        $($(this).data('tabs-target')).fadeIn();
+                        $(this).addClass('tabs__item--active');
+                    });
+                    $(document).on('click', '.media', function () {
+                        $('.modal').fadeIn();
+                    });
+                    $(document).on('click', '.modal__close', function (event) {
+                        event.preventDefault();
+                        $('.modal').fadeOut();
+                    });
+                });
+            </script>
+        </body>
+
+    </html>
