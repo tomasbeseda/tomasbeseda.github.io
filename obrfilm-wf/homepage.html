@@ -33,7 +33,7 @@
 	</div>
 	<div class="header">
 		<div class="header__content">
-			<a href="homepage.html" class="header__logo">OBR Film</a>
+			<a href="/" class="header__logo">OBR Film</a>
 			<ul class="header__navigation">
 				<li>
 					<a href="reklama.html">Reklama</a>
@@ -62,6 +62,30 @@
 			</div>
 		</div>
 	</div>
+	<div class="section section--center" id="what-we-do">
+	<div id="tabs-anchor" style="position: absolute;top: -50px;left: 0;"></div>
+		<h2 class="indent">What we do</h2>
+		<div class="indent">
+			<div class="wrap">
+				<div class="wrap__item wrap__item--3">
+					<a href="reklama.html" class="media">
+						<h3>Reklama</h3>
+					</a>
+				</div>
+				<div class="wrap__item wrap__item--3">
+					<a href="filmove-projekty.html" class="media">
+						<h3>Filmové projekty</h3>
+					</a>
+				</div>
+				<div class="wrap__item wrap__item--3">
+					<a href="animace.html" class="media">
+						<h3>Animace</h3>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--
 	<div class="section section--center" id="what-we-do">
 		<div id="tabs-anchor" style="position: absolute;top: -50px;left: 0;"></div>
 		<ul class="tabs indent">
@@ -250,7 +274,7 @@
 			</div>
 		</div>
 	</div>
-
+	-->
 	<div class="layout layout--light">
 		<div class="section section--center">
 			<div class="wrap">
@@ -316,7 +340,7 @@
 				$($(this).data('tabs-target')).fadeIn();
 				$(this).addClass('tabs__item--active');
 			});
-			$(document).on('click', '.media', function() {
+			$(document).on('click', 'div.media', function() {
 				$('.modal').fadeIn();
 			});
 			$(document).on('click', '.modal__close', function(event) {
