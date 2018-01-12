@@ -10,6 +10,7 @@
 	<meta name="description" content="OBR Film - a beautiful way of film art">
 
 	<link rel="stylesheet" type="text/css" href="build/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<style>
 		#tab-1 {
 			display: block;
@@ -31,10 +32,14 @@
 			</a>
 		</div>
 	</div>
+	<!--
 	<div class="header">
 		<div class="header__content">
-			<a href="/" class="header__logo"></a>
-			<ul class="header__navigation">
+			<a href="/" class="header__logo animated fadeIn"></a>
+			<ul class="header__navigation animated fadeIn">
+				<li class="header__navigation--active">
+					<a href="homepage.html">Úvod</a>
+				</li>
 				<li>
 					<a href="reklama.html">Reklama</a>
 				</li>
@@ -53,282 +58,123 @@
 			</ul>
 		</div>
 	</div>
-	<div class="hero hero--main">
-		<div class="section">
-			<div class="hero__content">
-				<h1>A beautiful journey of film art.</h1>
-				<p>If you're playing a poker game and you look around the table<br />and can't tell who the sucker is, it's you.</p>
-				<a href="#tabs-anchor" class="btn btn--white">What we do</a>
-			</div>
-		</div>
-	</div>
-	<div class="section section--center" id="what-we-do">
-	<div id="tabs-anchor" style="position: absolute;top: -50px;left: 0;"></div>
-		<!--<h2 class="indent">Co děláme</h2>-->
-		<div class="indent">
-			<div class="wrap">
-				<div class="wrap__item wrap__item--3">
-					<a href="reklama.html">
-						<h3 class="indent color-primary">Reklama</h3>
-						<div class="media media--hp indent" id="ads"></div>
-					</a>
-				</div>
-				<div class="wrap__item wrap__item--3">
-					<a href="filmove-projekty.html">
-						<h3 class="indent color-primary">TV &amp; film</h3>
-						<div class="media media--hp indent" id="tv"></div>
-					</a>
-				</div>
-				<div class="wrap__item wrap__item--3">
-					<a href="animace.html">
-						<h3 class="indent color-primary">Animace</h3>
-						<div class="media media--hp indent" id="animation"></div>
-					</a>
-				</div>
-			</div>
+	-->
+	<div class="header header--transparent">
+		<div class="header__content">
+			<a href="homepage.html" class="header__logo animated fadeIn"></a>
+			<ul class="header__navigation animated fadeIn">
+				<li class="header__navigation--active">
+					<a href="homepage.html">Úvod</a>
+				</li>
+				<li>
+					<a href="#about-us">O nás</a>
+				</li>
+				<li>
+					<a href="#contact">Kontakt</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 	<!--
-	<div class="section section--center" id="what-we-do">
-		<div id="tabs-anchor" style="position: absolute;top: -50px;left: 0;"></div>
-		<ul class="tabs indent">
-			<li><a href="#tabs-anchor" class="tabs__item js-tabs tabs__item--active" data-tabs-target="#tab-1">Reklama</a></li>
-			<li><a href="#tabs-anchor" class="tabs__item js-tabs" data-tabs-target="#tab-2">Filmové projekty</a></li>
-			<li><a href="#tabs-anchor" class="tabs__item js-tabs" data-tabs-target="#tab-3">Animace</a></li>
-		</ul>
-		<div id="tab-1" class="tabs__content wrap indent indent--large">
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="indent"></div>
-				<a href="reklama.html" class="btn btn--primary indent">Zobrazit všechny</a>
-			</div>
-		</div>
-		<div id="tab-2" class="tabs__content wrap indent indent--large">
-			<div class="wrap__item wrap__item--3">
-				<div class="media media--info-on-hover">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media media--info-on-hover">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media media--info-on-hover">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media media--info-on-hover">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media media--info-on-hover">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media media--info-on-hover">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media media--info-on-hover">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media media--info-on-hover">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media media--info-on-hover">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="indent"></div>
-				<a href="filmove-projekty.html" class="btn btn--primary indent">Zobrazit všechny</a>
-			</div>
-		</div>
-		<div id="tab-3" class="tabs__content wrap indent indent--large">
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="media">
-					<h3>Media title</h3>
-					<p>Media perex</p>
-				</div>
-			</div>
-			<div class="wrap__item wrap__item--3">
-				<div class="indent"></div>
-				<a href="animace.html" class="btn btn--primary indent">Zobrazit všechny</a>
+	<div class="hero hero--main">
+		<div class="section">
+			<div class="hero__content animated fadeIn">
+				<h1>A&nbsp;beautiful journey of&nbsp;film art.</h1>
+				<p>Jsme tvůrčí skupina působicí v oblasti filmového a reklamního průmyslu. Náměty, scénáře, storyboardy, prezentace, kompletní přípravy, produkce, natáčení, postprodukce, média.</p>
+				<a href="#tabs-anchor" class="btn btn--white">Co děláme</a>
 			</div>
 		</div>
 	</div>
 	-->
+	<div class="layout" id="what-we-do">
+		<div class="section section--center">
+			<div class="indent indent--large">
+				<div class="wrap animated fadeIn">
+					<div class="wrap__item wrap__item--3">
+						<a href="reklama.html">
+							<div class="box box--white">
+								<div class="media media--hp indent" id="ads"></div>
+								<div class="box__content">
+									<h3 class="indent color-grey">Reklama</h3>
+									<!--
+									<ul>
+										<li>náměty</li>
+										<li>scénáře</li>
+										<li>storyboardy</li>
+										<li>prezentace</li>
+										<li>kompletní přípravy</li>
+										<li>produkce</li>
+										<li>natáčení</li>
+										<li>postprodukce</li>
+										<li>média</li>
+									</ul>
+									-->
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="wrap__item wrap__item--3">
+						<a href="reklama.html">
+							<div class="box box--white">
+								<div class="media media--hp indent" id="tv"></div>
+								<div class="box__content">
+									<h3 class="indent color-grey">TV &amp; film</h3>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="wrap__item wrap__item--3">
+						<a href="reklama.html">
+							<div class="box box--white">
+								<div class="media media--hp indent" id="animation"></div>
+								<div class="box__content">
+									<h3 class="indent color-grey">Animace</h3>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="layout layout--light" id="about-us">
 		<div class="section section--center">
 			<div class="wrap">
 				<div class="wrap__item wrap__item--2">
-					<h2>O nás</h2>
-					<p>OBRFILM je skupinou tvůrčích osobností v oblastech filmového umění a grafiky. Vyfiknem produkci filmu, reklamy, grafiky a samozřejmě podporujem studentský a autorský filmy.</p>
-					<p>Matroš sestříháme v digitálních střižnách AVID Media Composer nebo FINAL CUT. Zvukovou postprodukci děláme v Pro Toolsech. Umíme dabovat. Herci a herečky nakecaj komentář a zvládnou mluvit jakoukoliv hatmatilkou. Vymastrujem DVD s fajnovým menu nebo
-						animací.</p>
-					<a href="o-nas.html" class="btn btn--primary">Více informací o nás</a>
+					<h2 class="color-primary">O nás</h2>
+					<p>OBRFILM je tvůrčí skupinou působicí v oblasti filmového a reklamního průmyslu.</p>
+					<p>"Od nápadu k realizaci a vše pod jednou střechou"</p>
+					<p>Náměty, scénáře, storyboardy, prezentace, kompletní přípravy, produkce, natáčení, dabing, postprodukce, média.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="section">
-		<div class="wrap indent">
-			<div class="wrap__item">
-				<h2>Kontakt</h2>
+	<div id="contact" style="position:relative;">
+		<div id="map" style="height: 550px;"></div>
+
+		<div class="box box--red contact-box">
+			<h2 class="color-white">Kontakt</h2>
+			<div class="indent color-white">
+				<p class="typo--size-18"><span class="ion ion-android-pin"></span> <span class="typo--bold"> Studio a sídlo produkce / </span><span class="typo--size-18 typo--bold color-white">Ortenovo&nbsp;nám.&nbsp;890/2, 170&nbsp;00, Praha&nbsp;7</span></p>
+				<p class="typo--size-18"><span class="typo--bold">E-mail / </span><a href="mailto: obrfilm@obrfilm.com" class="typo--bold color-white">obrfilm@obrfilm.com</a></p>
+				<p class="typo--size-18"><span class="typo--bold">Telefon / </span><a href="tel: +420777007932" class="typo--bold color-white">+420 777 007 932</a></p>
+				<p class="typo--size-18"><span class="typo--bold">Telefon / </span><a href="tel: +420775790339" class="typo--bold color-white">+420 775 790 339</a></p>
+				<p class="typo--size-18"><span class="typo--bold">IČO / </span><span class="color-white">71626042</span></p>
 			</div>
-		</div>
-		<div class="wrap indent indent--large">
-			<div class="wrap__item wrap__item--2">
-				<div id="map" style="width: 100%;height: 300px;background-color: #eee;"><div style="padding:20px;text-align: left;">Mapa</div></div>
-			</div>
-			<div class="wrap__item wrap__item--2 align--left padding--left-50">
-				<div class="indent">
-					<p class="typo"><span class="ion ion-android-pin"></span> Adresa / <span class="typo--size-18 typo--bold color-primary">Ortenovo nám. 890/2, 170 00, Praha 7</span></p>
-				</div>
-				<div class="indent">
-					<div class="typo--size-18"><span class="typo--bold">Telefon / </span><a href="tel:+420223016015" class="typo--bold">+420 223 016 015</a></div>
-				</div>
-				<div class="indent">
-					<div class="typo--size-18"><span class="typo--bold">E-mail / </span><a href="mailto: obrfilm@obrfilm.com" class="typo--bold">obrfilm@obrfilm.com</a></div>
-				</div>
-				<div class="indent">
-					<div class="typo--size-18"><span class="typo--bold">IČO / </span><span class="color-primary">71626042</span></div>
-				</div>
-				<div class="indent indent--large padding-bottom">
-					<a href="" target="_blank" class="contact-icon">
-                                    <span class="ion ion-social-facebook"></span>
-                                </a>
-					<a href="" target="_blank" class="contact-icon">
-                                    <span class="ion ion-social-instagram"></span>
-                                </a>
-					<a href="" target="_blank" class="contact-icon">
-                                    <span class="ion ion-social-youtube"></span>
-                                </a>
-					<a href="" target="_blank" class="contact-icon">
-                                    <span class="ion ion-social-vimeo"></span>
-                                </a>
-				</div>
+			<div class="indent padding-bottom">
+				<a href="" target="_blank" class="contact-icon">
+								<span class="ion ion-social-facebook"></span>
+							</a>
+				<a href="" target="_blank" class="contact-icon">
+								<span class="ion ion-social-instagram"></span>
+							</a>
+				<a href="" target="_blank" class="contact-icon">
+								<span class="ion ion-social-youtube"></span>
+							</a>
+				<a href="" target="_blank" class="contact-icon">
+								<span class="ion ion-social-vimeo"></span>
+							</a>
 			</div>
 		</div>
 	</div>
@@ -352,6 +198,53 @@
 			});
 		});
 	</script>
+	<script>
+		function initMap() {
+			var uluru = new google.maps.LatLng(50.108291, 14.446635);
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 15,
+				center: uluru,
+				zoomControl: true,
+				mapTypeControl: false,
+				scaleControl: false,
+				streetViewControl: false,
+				rotateControl: false,
+				fullscreenControl: false
+			});
+			var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			});
+			function offsetCenter(latlng, offsetx, offsety) {
+
+				var scale = Math.pow(2, map.getZoom());
+
+				var projection = map.getProjection();
+
+				console.log(projection);
+
+				var worldCoordinateCenter = projection.fromLatLngToPoint(latlng);
+				var pixelOffset = new google.maps.Point((offsetx / scale) || 0, (offsety / scale) || 0);
+
+				var worldCoordinateNewCenter = new google.maps.Point(
+					worldCoordinateCenter.x - pixelOffset.x,
+					worldCoordinateCenter.y + pixelOffset.y
+				);
+
+				return map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
+
+			}
+			setTimeout(function() {
+				map.setCenter(offsetCenter(uluru, -270, 0));
+			}, 500);
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7bX-eHZiFgOz_9GW7NB9x_nUaPKVIegk&libraries=geometry&callback=initMap">
+	</script>
+
+
+
+
 </body>
 
 </html>
